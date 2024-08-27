@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=no">
+    <title>Ejercicio 01</title>
+    <link type="text/css" rel="stylesheet" href="./css/styles.css"/>
+
+    <!-- CDN FontAwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+</head>
+<body class="bg-first-pattern bg-scroll">
+
+    <!-- Header -->
+     <header id="header" class="bg-black h-18 text-white bebas xs:h-36 shadow backdrop-blur-xl">
+        <div class="container w-10/12 mx-auto flex space-between md:flex-row xs:flex-col">
+            <!-- Logotipo -->
+            <div id="logo" class="flex-1 xs:mx-auto">
+                <div class="group w-56 pt-1 pb-1 md:ml-5 mt-2 bg-azul-claro text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-azul-claro hover:bg-azul-oscuro">
+                    <span class="symbol block float-left text-3xl mt-1 ml-11 animate-spin-low group-hover:animate-from-below">S</span>
+                    <h3 class="block floar-right text-4xl mt-1.5 mr-16 transition duration-100 group-hover:animate-from-Right">BLOG</h3>
+                </div>
+            </div>
+            <!-- Menu de navegacion -->
+            <nav id="menu" class="felx-1">
+                <ul class="flex h-20 items-center text-2xl text-center md:flex-row md:mr-6 md:justify-end xs:justify-center">
+                    <li class="menu-item"><a href="#" class="menu-item-a">Inicio</a></li>
+                    <li class="menu-item"><a href="#" class="menu-item-a">Blog</a></li>
+                    <li class="menu-item"><a href="#" class="menu-item-a">Formacion</a></li>
+                    <li class="menu-item"><a href="#" class="menu-item-a">Contacto</a></li>
+                </ul>
+            </nav>
+            <!-- FIN Menu de navegacion -->
+        </div>
+     </header>
+    <!-- End Header -->
+
+    <!-- INICIO DE SECCION PRINCIPAL -->
+    <section class="container w-10/12 mx-auto">
+        <section id="info" class="mt-6">
+            <!-- INICIO BANNER -->
+            <div id="banner" class="w-full h-32 border-8 border-white overflow-hidden shadow m-5 bg-megabanner bg-banner-position bg-no-repeat animate-bg-banner">
+                <h1 class="block text-white text-4xl font-bold tracking-wider mx-auto m-10 text-center text-banner animate-bg-showtext xs:text-xl xs:mt-8">Todo sobre desarrollo web con Agustin Schwank 2022</h1>
+            </div>
+            <!-- FIN DE BANNER -->
+            <!-- INICIO CARDS -->
+            <div id="cards" class="flex flex-row flex-nowrap justify-between mt-8">
+                <div class="item-card group">
+                    <i class="card__icon fas fa-code"></i>
+                    <h2 class="card__title">Web Developer</h2>
+                    <p class="card__description">Conviertete en un desarrollador web profesional.</p>
+                </div>
+                <div class="item-card group">
+                    <i class="card__icon fas fa-terminal"></i>
+                    <h2 class="card__title">Sistemas</h2>
+                    <p class="card__description">Aprende a administrar terminales Linux y Windows.</p>
+                </div>
+                <div class="item-card group">
+                    <i class="card__icon fas fa-wrench"></i>
+                    <h2 class="card__title">Server</h2>
+                    <p class="card__description">Conoce todo subre los Servidores.</p>
+                </div>
+                <div class="item-card group">
+                    <i class="card__icon fas fa-wifi"></i>
+                    <h2 class="card__title">Redes</h2>
+                    <p class="card__description">Se un experto en la Administracion de Redes.</p>
+                </div>
+                <div class="item-card group">
+                    <i class="card__icon fas fa-server"></i>
+                    <h2 class="card__title">Bases de Datos</h2>
+                    <p class="card__description">Montar y Administrar bases de datos.</p>
+                </div>
+            </div>
+            <!-- FIN DE CARDS -->
+        </section>
+        <!-- FIN SECCION DE ARTICULOS -->
+    </section>
+    <!-- FIN DE SECCION PRINCIPAL -->
+    
+</body>
+</html>

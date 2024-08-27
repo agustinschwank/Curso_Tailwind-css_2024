@@ -1,0 +1,10 @@
+# Ignora archivos del sistema
+
+# Carpetas Ignoradas
+    Ejercicio_01/node_modules/*
+
+# Ignorar archivos de texto
+
+# Ignorar archivos API keys
+
+# Ignorar archivos de configuración SASS

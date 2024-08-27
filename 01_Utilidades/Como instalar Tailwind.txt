@@ -1,0 +1,11 @@
+Sitio web oficial de tailwind: https://tailwindcss.com/
+
+Pasos previos para la instalacion.
+
+1. Buscar e instalar nodejs: https://nodejs.org/en
+2. Usar comando de consola, e ir a carpeta daterminada. Comandos cd, mkdir (crear carpeta);
+3. instalar freamword por npm.
+4. https://tailwindcss.com/docs/installation/using-postcss
+
+Comandos:
+npm install -D tailwindcss postcss autoprefixer --save-dev
