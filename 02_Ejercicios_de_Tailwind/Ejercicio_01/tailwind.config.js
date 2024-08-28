@@ -27,12 +27,19 @@ module.exports = {
       height: {
         "18": "4.5rem",
       },
+      boxShadow: {
+        header3D: "0px 1px 0px #000, 1px 2px 0px #000, 2px 3px 0px #000, 3px 4px 0px #000, 4px 4px 2px #000",
+        boxPersonal1: "0px 0px 1px rgba(0,0,0,0.3), 0px 3px 7px rgba(0,0,0,0.3), 0px 1px 0px #fff inset, 0px -3px rgba(0,0,0,0.3) inset",
+      },
       animation: {
         "spin-low": "spin 2s linear infinite",
         "from-below": "fromBelow 500ms linear",
         "from-Right": "fromRight 300ms linear",
         "bg-banner": "fromBanner 10s linear",
         "bg-showtext": "showBannerText 10s linear",
+        "showicontop": "showIcon 300ms linear",
+        "show-card-title": "showCardTitle 400ms linear",
+        "show-card-description": "showCardDescription 400ms linear",
       },
       keyframes: {
         fromBelow: {
@@ -68,13 +75,28 @@ module.exports = {
             opacity: 1,
             color: "#ffffff",
           }
+        },
+        showIcon: {
+          from: {transform: "translateY(-200%)"},
+          to: {transform: "translateY(0%)"},
+        },
+        showCardTitle: {
+          from: {transform: "translateY(-300%)"},
+          to: {transform: "translateY(0%)"},
+        },
+        showCardDescription: {
+          from: {transform: "translateX(-100%)"},
+          to: {transform: "translateX(0%)"},
         }
       },
     },
   },
   plugins: [],
   variants: {
+    animation: ["responsive", "hover", "group-hoover"],
+    animate: ["responsive", "hover", "group-hoover"],
     fontSize: ["responsive", "hover", "group-hoover"],
+    scale: ["responsive", "hover", "group-hoover"],
   }, 
 }
 

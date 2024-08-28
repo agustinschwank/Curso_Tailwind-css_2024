@@ -40,36 +40,36 @@
     <section class="container w-10/12 mx-auto">
         <section id="info" class="mt-6">
             <!-- INICIO BANNER -->
-            <div id="banner" class="w-full h-32 border-8 border-white overflow-hidden shadow m-5 bg-megabanner bg-banner-position bg-no-repeat animate-bg-banner">
+            <div id="banner" class="w-full h-32 border-8 border-white overflow-hidden shadow bg-megabanner bg-banner-position bg-no-repeat animate-bg-banner">
                 <h1 class="block text-white text-4xl font-bold tracking-wider mx-auto m-10 text-center text-banner animate-bg-showtext xs:text-xl xs:mt-8">Todo sobre desarrollo web con Agustin Schwank 2022</h1>
             </div>
             <!-- FIN DE BANNER -->
             <!-- INICIO CARDS -->
-            <div id="cards" class="flex flex-row flex-nowrap justify-between mt-8">
-                <div class="item-card group">
-                    <i class="card__icon fas fa-code"></i>
-                    <h2 class="card__title">Web Developer</h2>
-                    <p class="card__description">Conviertete en un desarrollador web profesional.</p>
+            <div id="cards" class="flex flex-row flex-nowrap justify-between mt-8 gap-5">
+                <div class="item-card group ">
+                    <i class="card__icon fas fa-code transform group-hover:text-azul-claro group-hover: scale-125 group-hover:animate-showicontop"></i>
+                    <h2 class="card__title group-hover:animate-show-card-title">Web Developer</h2>
+                    <p class="card__description group-hover:animate-show-card-description">Conviertete en un desarrollador web profesional.</p>
                 </div>
                 <div class="item-card group">
-                    <i class="card__icon fas fa-terminal"></i>
-                    <h2 class="card__title">Sistemas</h2>
-                    <p class="card__description">Aprende a administrar terminales Linux y Windows.</p>
+                    <i class="card__icon fas fa-terminal transform group-hover:text-azul-claro group-hover: scale-125 group-hover:animate-showicontop"></i>
+                    <h2 class="card__title group-hover:animate-show-card-title">Sistemas</h2>
+                    <p class="card__description group-hover:animate-show-card-description">Aprende a administrar terminales Linux y Windows.</p>
                 </div>
                 <div class="item-card group">
-                    <i class="card__icon fas fa-wrench"></i>
-                    <h2 class="card__title">Server</h2>
-                    <p class="card__description">Conoce todo subre los Servidores.</p>
+                    <i class="card__icon fas fa-wrench transform group-hover:text-azul-claro group-hover: scale-125 group-hover:animate-showicontop"></i>
+                    <h2 class="card__title group-hover:animate-show-card-title">Server</h2>
+                    <p class="card__description group-hover:animate-show-card-description">Conoce todo subre los Servidores.</p>
                 </div>
                 <div class="item-card group">
-                    <i class="card__icon fas fa-wifi"></i>
-                    <h2 class="card__title">Redes</h2>
-                    <p class="card__description">Se un experto en la Administracion de Redes.</p>
+                    <i class="card__icon fas fa-wifi transform group-hover:text-azul-claro group-hover: scale-125 group-hover:animate-showicontop"></i>
+                    <h2 class="card__title group-hover:animate-show-card-title">Redes</h2>
+                    <p class="card__description group-hover:animate-show-card-description">Se un experto en la Administracion de Redes.</p>
                 </div>
                 <div class="item-card group">
-                    <i class="card__icon fas fa-server"></i>
-                    <h2 class="card__title">Bases de Datos</h2>
-                    <p class="card__description">Montar y Administrar bases de datos.</p>
+                    <i class="card__icon fas fa-server transform group-hover:text-azul-claro group-hover: scale-125 group-hover:animate-showicontop"></i>
+                    <h2 class="card__title group-hover:animate-show-card-title">Bases de Datos</h2>
+                    <p class="card__description group-hover:animate-show-card-description">Montar y Administrar bases de datos.</p>
                 </div>
             </div>
             <!-- FIN DE CARDS -->
@@ -77,6 +77,174 @@
         <!-- FIN SECCION DE ARTICULOS -->
     </section>
     <!-- FIN DE SECCION PRINCIPAL -->
+
+    <!-- MAIN -->
+
+    <main class="container w-10/12 mx-auto flex md:flex-row mt-7 xs:flex-col">
+
+        <!-- Barra lateral -->
+        <aside id="aside" class="flex-none order-2 w-72 min-h-full xs:w-full xs:m-0">
+            <h3 class="aside__header">Buscar</h3>
+            <div id="buscar" class="
+            w-11/12
+            h-10
+            mt-4
+            mx-auto
+            bg-white
+            border
+            border-gray-200
+            rounded
+            shadow-inner
+            mb-4
+            ">
+                <form>
+                    <input type="text" name="search" class="
+                    w-10/12
+                    h-10
+                    border-none
+                    pl-1.5
+                    rounded-md
+                    bg-transparent
+                    text-gray-500
+                    transition
+                    duration-300
+                    outline-none
+                    
+                    "/>
+                    <input type="button" name="buscar" value="L" class="
+                    symbol
+                    h-10
+                    cursor-pointer
+                    text-base
+                    bg-transparent
+                    border-none
+                    text-gray-500
+                    pl-2
+                    "/>
+                </form>
+            </div>
+            <h3 class="aside__header">Login</h3>
+            <div id="login" class="aside__box">
+                <form>
+                    <i class="user fas fa-user form__icon"></i>
+                    <input type="email" name="user" class="form__input"/>
+
+                    <i class="locked fas fa-lock form__icon"></i>
+                    <input type="password" name="password" class="form__input"/>
+                    
+                    <input type="submit" value="Enviar" class="form__btn"/>
+                    <input type="reset" value="Limpiar" class="form__btn"/>
+                </form>
+                <a href="#" class="form__link">Registrarme</a>
+                <a href="#" class="form__link">Recuperar Password</a>
+            </div>
+            <h3 class="aside__header">Redes Sociales</h3>
+            <div id="redes-sociales" class="aside__box h-48">
+                <div class="twitter group">
+                    <a class="social__link" target="_blanck" href="https://twitter.com/agustinschwank"><i class="fab fa-twitter-square"></i></a>
+                    <p class="social__name">Twitter</p>
+                </div>
+                <div class="facebook group">
+                    <a class="social__link" target="_blanck" href="https://www.facebook.com/agustinschwank/"><i class="fab fa-facebook-square"></i></a>
+                    <p class="social__name">Facebook</p>
+                </div>
+                <div class="youtube group">
+                    <a class="social__link" href="#"><i class="fab fa-youtube-square"></i></a>
+                    <p class="social__name">YouTube</p>
+                </div>
+            </div>
+            <h3 class="aside__header">Sponsors</h3>
+            <div id="sponsors" class="aside__box">
+
+            </div>
+        </aside>
+
+        <!-- Seccion Articulos -->
+        <section id="articles" class="aticles__article">
+            <h2 class="articles__title shadowMaster">Ultimos Articulos</h2>
+            <article class="article__item">
+                <div class="article__data">
+                    <span>Fecha: 25 Dic</span>
+                    <span>Categoria: Hardware</span>
+                </div>
+                <h3 class="article__title">
+                    <a href="#">Titulo del Articulo</a>
+                </h3>
+                <p class="article__descrption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam qui, eius vel possimus nulla nesciunt repellat eligendi accusantium! In assumenda obcaecati voluptatibus odit architecto esse fuga vitae placeat tempore nostrum!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque praesentium necessitatibus repellat vero earum facilis nihil, cumque, molestiae est quam quis veniam voluptate dolor saepe hic tempora expedita aliquid!.
+                    <a href="#">Leer Mas</a>
+                </p>
+            </article>
+            <article class="article__item">
+                <div class="article__data">
+                    <span>Fecha: 25 Dic</span>
+                    <span>Categoria: Hardware</span>
+                </div>
+                <h3 class="article__title">
+                    <a href="#">Titulo del Articulo</a>
+                </h3>
+                <p class="article__descrption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam qui, eius vel possimus nulla nesciunt repellat eligendi accusantium! In assumenda obcaecati voluptatibus odit architecto esse fuga vitae placeat tempore nostrum!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque praesentium necessitatibus repellat vero earum facilis nihil, cumque, molestiae est quam quis veniam voluptate dolor saepe hic tempora expedita aliquid!.
+                    <a href="#">Leer Mas</a>
+                </p>
+            </article>
+            <article class="article__item">
+                <div class="article__data">
+                    <span>Fecha: 25 Dic</span>
+                    <span>Categoria: Hardware</span>
+                </div>
+                <h3 class="article__title">
+                    <a href="#">Titulo del Articulo</a>
+                </h3>
+                <p class="article__descrption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam qui, eius vel possimus nulla nesciunt repellat eligendi accusantium! In assumenda obcaecati voluptatibus odit architecto esse fuga vitae placeat tempore nostrum!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque praesentium necessitatibus repellat vero earum facilis nihil, cumque, molestiae est quam quis veniam voluptate dolor saepe hic tempora expedita aliquid!.
+                    <a href="#">Leer Mas</a>
+                </p>
+            </article>
+            <article class="article__item">
+                <div class="article__data">
+                    <span>Fecha: 25 Dic</span>
+                    <span>Categoria: Hardware</span>
+                </div>
+                <h3 class="article__title">
+                    <a href="#">Titulo del Articulo</a>
+                </h3>
+                <p class="article__descrption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam qui, eius vel possimus nulla nesciunt repellat eligendi accusantium! In assumenda obcaecati voluptatibus odit architecto esse fuga vitae placeat tempore nostrum!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque praesentium necessitatibus repellat vero earum facilis nihil, cumque, molestiae est quam quis veniam voluptate dolor saepe hic tempora expedita aliquid!.
+                    <a href="#">Leer Mas</a>
+                </p>
+            </article>
+            <article class="article__item">
+                <div class="article__data">
+                    <span>Fecha: 25 Dic</span>
+                    <span>Categoria: Hardware</span>
+                </div>
+                <h3 class="article__title">
+                    <a href="#">Titulo del Articulo</a>
+                </h3>
+                <p class="article__descrption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam qui, eius vel possimus nulla nesciunt repellat eligendi accusantium! In assumenda obcaecati voluptatibus odit architecto esse fuga vitae placeat tempore nostrum!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque praesentium necessitatibus repellat vero earum facilis nihil, cumque, molestiae est quam quis veniam voluptate dolor saepe hic tempora expedita aliquid!.
+                    <a href="#">Leer Mas</a>
+                </p>
+            </article>
+            <article class="article__item">
+                <div class="article__data">
+                    <span>Fecha: 25 Dic</span>
+                    <span>Categoria: Hardware</span>
+                </div>
+                <h3 class="article__title">
+                    <a href="#">Titulo del Articulo</a>
+                </h3>
+                <p class="article__descrption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam qui, eius vel possimus nulla nesciunt repellat eligendi accusantium! In assumenda obcaecati voluptatibus odit architecto esse fuga vitae placeat tempore nostrum!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque praesentium necessitatibus repellat vero earum facilis nihil, cumque, molestiae est quam quis veniam voluptate dolor saepe hic tempora expedita aliquid!.
+                    <a href="#">Leer Mas</a>
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- END MAIN -->
     
 </body>
 </html>

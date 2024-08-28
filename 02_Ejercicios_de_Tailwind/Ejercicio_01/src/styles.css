@@ -91,18 +91,20 @@
     .item-card {
         @apply  
                 bg-white
-                shadow-md
+                drop-shadow-md
+                shadow-slate-200
+                border
+                border-gray-300
                 h-80
                 w-full
                 flex-1
                 cursor-pointer
                 hover:bg-black
-                border-gray-200
                 overflow-hidden
                 pl-5
                 pr-5
-                m-5
-                rounded-md
+                rounded-lg
+                xs:hidden
     }
 
     .card__icon {
@@ -114,14 +116,11 @@
                 text-center
                 transition
                 duration-300
-                group-hover:text-azul-claro
-                group-hover:text-7xl
     }
 
     .card__title {
         font-family: "StaatLiches";
-        @apply  w-full
-                h-12
+        @apply  h-12
                 text-xl
                 font-extrabold
                 text-center
@@ -134,14 +133,233 @@
 
     .card__description {
         font-family: 'Ubuntu';
-        @apply  w-full
-                h-12
+        @apply  
                 text-center
                 text-azul-fuerte
                 text-base
                 transition
                 duration-300
-                ubuntu
+                group-hover:font-bold
                 group-hover:text-white
+    }
+
+    .articles__title {
+        font-family: "BebasNeue";
+        background: #c2c2c2;
+        @apply  w-full 
+                h-20 
+                block  
+                text-4xl 
+                text-center 
+                tracking-widest 
+                font-normal
+                pt-5 
+                shadow-header3D
+    }
+
+    .aticles__article {
+        @apply flex-grow 
+                order-1 
+                mr-10
+                xs:m-0
+                xs:w-full
+    }
+
+    .article__item {
+        @apply bg-white 
+                w-full 
+                h-auto 
+                border 
+                border-gray-200 
+                m-10 
+                mx-auto 
+                p-2.5 
+                text-black 
+                shadow-md
+                xs:overflow-hidden
+                xs:p-0
+    }
+
+    .article__data {
+        @apply float-right 
+             bg-black 
+            text-white 
+              text-sm 
+              h-10 
+              leading-6 
+              p-2 
+              -m-2.5 
+              rounded-bl-xl
+              xs:w-full
+              xs:rounded-none
+              xs:mb-2
+              xs:m-0
+    }
+
+    .article__data span {
+        @apply m-2.5
+    }
+
+    .article__title {
+        @apply block 
+                text-2xl 
+                m-1
+                xs:text-center
+    }
+
+    .article__title a {
+        @apply font-semibold 
+                text-azul-oscuro 
+                hover:underline
+    }
+
+    .article__descrption {
+        @apply block 
+                mt-3 
+                mb-3 
+                text-base 
+                font-sans 
+                font-normal
+                xs:pl-2
+                xs:pr-2
+    }
+
+    .article__descrption a {
+        @apply inline-block
+                ml-2
+                text-lg
+                font-semibold
+                text-azul-oscuro
+                hover:underline
+                hover:decoration-2
+    }
+
+    .aside__header {
+        font-family: "BebasNeue";
+        background: #c2c2c2;
+        @apply  block 
+                h-11
+                leading-10 
+                shadow-header3D 
+                text-3xl 
+                font-medium 
+                tracking-widest 
+                pt-1
+                pl-3
+                mb-3.5
+    }
+
+    .aside__box{
+        @apply  w-10/12 
+                max-w-xs
+                h-60 
+                mx-auto 
+                mt-5 
+                mb-7 
+                pt-1
+                bg-white
+                shadow-boxPersonal1
+    }
+
+    .form__icon {
+        @apply 
+            ml-9
+            mt-2.5
+            h-10
+            text-center
+            absolute
+    }
+
+    .form__input {
+        @apply 
+            block
+            mx-auto
+            mt-1
+            pl-9
+            w-10/12
+            h-8
+            border
+            border-gray-300
+            shadow-inner
+            shadow-gray-200
+            rounded-md
+            outline-none
+            text-gray-500
+            transition
+            duration-300
+            focus:text-gray-700
+            mb-3
+    }
+
+    .form__btn {
+        font-family: 'StaatLiches';
+        @apply
+            w-24
+            h-8
+            mt-5
+            ml-3
+            mb-5
+            text-center
+            text-white
+            text-base
+            border-none
+            border-azul-oscuro
+            rounded-none
+            cursor-pointer
+            font-light
+            bg-gradient-to-b from-azul-claro to-azul-oscuro
+            transition
+            duration-300
+            hover:shadow-md
+    }
+
+    .form__link {
+        @apply 
+            block
+            text-left
+            w-full
+            text-lg
+            text-gray-600
+            hover:underline
+            hover:text-azul-oscuro
+            ml-3
+    }
+
+    .social__link {
+        @apply 
+            block
+            text-3xl
+            mt-3
+            mb-5
+            ml-5
+    }
+
+    .social__name {
+        @apply
+            block
+            h-10
+            pl-2
+            pr-2
+            pt-1
+            ml-16
+            -mt-14
+            font-sans
+            font-bold
+            tracking-wide
+            shadow-md
+            border-4
+            border-transparent
+            bg-azul-noche
+            text-white
+            rounded-md
+            absolute
+            transition
+            duration-300
+            transform
+            opacity-0
+            -translate-x-3/4
+            group-hover:translate-x-1
+            group-hover:transform
+            group-hover:opacity-100
     }
 }
