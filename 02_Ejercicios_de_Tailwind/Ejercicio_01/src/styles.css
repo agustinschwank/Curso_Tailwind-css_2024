@@ -362,4 +362,68 @@
             group-hover:transform
             group-hover:opacity-100
     }
+
+    .footer__box {
+        font-family: 'Ubuntu';
+        @apply
+        flex-1
+        h-96
+        text-center
+        text-white
+        xs:w-11/12
+        md:w-11/12
+        md:mx-auto
+        lg:w-80
+        lg:m-10
+        md:mt-5
+        xs:mt-5
+    }
+
+    .footer__title {
+        font-family: 'BebasNeue';
+        background: #c2c2c2;
+        @apply 
+        tracking-wide
+        text-center
+        text-4xl
+        text-black
+        rounded
+        mb-4
+        p-1.5
+    }
+
+    .footer__nav {
+        @apply 
+        text-left
+        m-5
+        text-2xl
+    }
+
+    .footer__nav li {
+        @apply 
+        mt-3
+        p-1
+        border-b-2
+        border-gray-400
+        transition
+        duration-300
+    }
+
+    .footer__nav li a {
+        @apply 
+        block
+        h-10
+        transition
+        duration-300
+        text-azul-claro
+        hover:text-white
+    }
+
+    .footer__map {
+        @apply
+        w-full
+        h-72
+        mt-3
+        rounded-xl
+    }
 }
